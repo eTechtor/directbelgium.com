@@ -4,80 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Browse used vehicles in Canada and ask DirectBelgium to verify, source and ship your choice to Nigeria." />
+    <meta name="theme-color" content="#071b43" />
     <title>DirectBelgium — Shop Canada. Ship to Nigeria.</title>
-    <link rel="icon" href="public/directbelgium-mark.png" />
+    <link rel="icon" href="/directbelgium-mark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="catalog.css" />
-    <link rel="stylesheet" href="sold.css" />
-    <link rel="stylesheet" href="modern.css?v=3" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/catalog.css" />
+    <link rel="stylesheet" href="/sold.css" />
+    <link rel="stylesheet" href="/modern.css?v=3" />
   </head>
   <body>
-    <div class="announcement"><span>Canada Direct. Nigeria Ready.</span><span class="announcement-note">Availability is confirmed before any payment is requested.</span></div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="DirectBelgium home"><img class="brand-mark" src="public/directbelgium-mark.png" alt="" /><span class="brand-name">directbelgium.com</span></a>
-      <button class="menu-button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
-      <nav aria-label="Primary navigation"><a href="#inventory">Inventory</a><a href="#process">How it works</a><a href="#shipping">Shipping</a><a href="#shipping" data-open="track">Track order</a></nav>
-      <div class="header-actions"><button class="primary small" data-open="appointment"><span class="label-long">Book a consultation</span><span class="label-short">Book consult</span><span aria-hidden="true">→</span></button></div>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">CANADA-TO-NIGERIA SOURCING</p>
-          <h1>Shop Canada.<br /><em>Ship to Nigeria.</em></h1>
-          <p class="hero-text">Browse 134 currently available used vehicles from recent inventory snapshots. Choose a car, review every available photo and condition note, then ask our team to verify it before a quotation.</p>
-          <div class="hero-actions"><a class="primary" href="#inventory">Explore products <span>→</span></a><a class="secondary" href="#process">See how it works <span>↗</span></a></div>
-          <div class="hero-assurance"><span class="dot"></span><span><strong>Clear before you commit.</strong> Inventory was captured October 4, 2026 and must be reconfirmed before purchase.</span></div>
-        </div>
-        <div class="hero-visual" aria-label="Featured vehicle carousel">
-          <button class="hero-car-link" type="button" data-hero-car aria-label="View vehicle details">
-            <img id="hero-car-image" src="public/catalog/assets/402559-2023-ram-1500-crew-cab/01.jpg" alt="Featured vehicle photographed at the Canadian supplier lot" fetchpriority="high" />
-            <b class="hero-price-tag" id="hero-car-price"></b>
-            <span class="hero-photo-label"><strong id="hero-car-title">Browse actual vehicles and condition notes</strong></span>
-          </button>
-          <div class="hero-carousel-controls">
-            <button type="button" class="hero-carousel-button" data-hero-previous aria-label="Show previous featured vehicle">←</button>
-            <div class="hero-carousel-dots" id="hero-carousel-dots" aria-label="Choose featured vehicle"></div>
-            <button type="button" class="hero-carousel-button" data-hero-next aria-label="Show next featured vehicle">→</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="trust-strip"><div><span class="strip-icon">✓</span><b>Verified before payment</b><small>Every quote follows availability checks</small></div><div><span class="strip-icon">◎</span><b>One team, end to end</b><small>From sourcing through shipping</small></div><div><span class="strip-icon">⌁</span><b>Clear cost breakdowns</b><small>Shipping and exclusions explained</small></div></section>
-
-      <section class="section inventory-section" id="inventory">
-        <div class="section-heading"><div><p class="eyebrow">CANADIAN VEHICLE INVENTORY</p><h2>Find your next<br />great purchase.</h2></div><p>Real listing data, photos and condition notes from inventory snapshots captured October 4 and 10, 2026. Availability and details are not guaranteed until DirectBelgium verifies them.</p></div>
-        <div class="inventory-toolbar">
-          <label class="search-field"><span>Search inventory</span><input id="inventory-search" type="search" placeholder="Search make, model, year or stock number" autocomplete="off" /></label>
-          <label><span>Make</span><select id="make-filter"><option value="">All makes</option></select></label>
-          <label><span>Body style</span><select id="body-filter"><option value="">All body styles</option></select></label>
-          <label><span>Sort</span><select id="sort-filter"><option value="newest">Year: newest</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="mileage-low">Mileage: low to high</option></select></label>
-        </div>
-        <div class="inventory-meta"><p id="result-count" aria-live="polite">Loading Canadian inventory…</p><button id="reset-filters" type="button">Reset filters</button></div>
-        <p class="fx-note">Prices are estimates in naira. Final pricing is confirmed after supplier availability and vehicle condition are verified. Taxes, shipping, customs and clearing are quoted separately.</p>
-        <div class="product-grid" id="products" aria-live="polite"><div class="catalog-loading">Loading vehicles and photos…</div></div>
-        <button class="secondary wide" id="view-all" hidden>Show more vehicles <span>↓</span></button>
-      </section>
-
-      <section class="section process" id="process"><div class="process-intro"><p class="eyebrow">A CLEARER WAY TO BUY</p><h2>We take the<br /><em>uncertainty</em> out.</h2><p>We’re a sourcing and shipping service — not an open marketplace. Our team coordinates the important checks before you make a purchase decision.</p><a class="text-link" href="#appointment">Start with a consultation <span>→</span></a></div><ol class="steps"><li><span>01</span><div><h3>Choose what you want</h3><p>Browse available and sourceable products from Canada.</p></div></li><li><span>02</span><div><h3>Talk it through</h3><p>Book a call, video meeting, or in-person consultation.</p></div></li><li><span>03</span><div><h3>Receive your quote</h3><p>We verify availability and give you an itemised quote with clear terms.</p></div></li><li><span>04</span><div><h3>Purchase &amp; ship</h3><p>After verified payment, we procure, ship and keep you informed.</p></div></li></ol></section>
-
-      <section class="quote-section"><div class="quote-visual"><div class="quote-card"><p>QUOTATION <span>DB-2026-0042</span></p><h3>2021 Toyota Camry SE</h3><div><span>Product price</span><b>₦15,000,000</b></div><div><span>Confirmed shipping</span><b>₦2,000,000</b></div><hr /><div class="total"><span>Total payable</span><b>₦17,000,000</b></div><small>Customs &amp; clearing estimated separately</small></div></div><div class="quote-copy"><p class="eyebrow">NO SURPRISES</p><h2>See the numbers<br />before you decide.</h2><p>Your quote separates product price, confirmed shipping and any applicable service fees. Customs and clearing estimates are explained — not hidden inside a vague total.</p><ul><li><span>✓</span> Quote expiry and clear acceptance terms</li><li><span>✓</span> Itemised costs in NGN</li><li><span>✓</span> No deposit-based purchasing model</li></ul></div></section>
-
-      <section class="shipping section" id="shipping"><div><p class="eyebrow">YOUR ORDER, VISIBLE</p><h2>From Canada<br />to your hands.</h2><p>Once a verified order moves forward, your customer dashboard shows recorded procurement and shipping milestones. We only show events our operations team has actually logged.</p><button class="secondary" data-open="track">Track an order <span>→</span></button></div><div class="timeline"><div class="complete"><b>1</b><span><strong>Product purchased</strong><small>Recorded by procurement</small></span></div><div class="complete"><b>2</b><span><strong>Preparing shipment</strong><small>Documents &amp; handling</small></span></div><div><b>3</b><span><strong>Dispatched from Canada</strong><small>Carrier milestone</small></span></div><div><b>4</b><span><strong>Arrived in Nigeria</strong><small>Then customs clearance</small></span></div><div><b>5</b><span><strong>Ready for pickup / delivery</strong><small>Final handover</small></span></div></div></section>
-
-      <section class="section faq" id="faq"><p class="eyebrow">GOOD TO KNOW</p><h2>Questions, answered clearly.</h2><details open><summary>When do I pay for a product?<span>+</span></summary><p>Only after DirectBelgium confirms availability and sends you a valid, itemised quotation. A reservation inquiry does not guarantee supplier inventory.</p></details><details><summary>Are customs and clearing charges included?<span>+</span></summary><p>They depend on product classification, valuation and current regulations. Your quotation explains whether each estimate is included or excluded.</p></details><details><summary>Can I book a consultation before choosing a product?<span>+</span></summary><p>Yes. Our team can discuss your needs and explain the process before you submit an inquiry.</p></details></section>
-
-      <section class="booking" id="appointment"><div><p class="eyebrow">LET'S GET STARTED</p><h2>Want a hand<br />choosing?</h2><p>Book a conversation with our team. We’ll walk through the product, pricing and what comes next.</p></div><button class="light-button" data-open="appointment">Book a consultation <span>→</span></button></section>
-    </main>
-    <footer><div class="footer-brand"><a class="brand" href="#top" aria-label="DirectBelgium home"><img class="brand-mark" src="public/directbelgium-mark.png" alt="" /><span class="brand-name">directbelgium.com</span></a><p>Canada Direct. Nigeria Ready.</p></div><div><b>Explore</b><a href="#inventory">Used cars</a><a href="#inventory">Browse all vehicles</a><a href="#process">How sourcing works</a></div><div><b>Company</b><a href="#process">How it works</a><a href="#shipping">Shipping &amp; delivery</a><a href="#appointment">Contact us</a></div><div><b>Support</b><a href="#shipping" data-open="track">Track an order</a><a href="#shipping">Customs &amp; clearing</a><a href="#faq">Frequently asked questions</a></div><small class="copyright">© 2026 DirectBelgium. Inventory snapshots captured October 4 and 10, 2026. Verify availability before purchase.</small></footer>
-
-    <dialog id="modal"><button class="close" aria-label="Close">×</button><div id="modal-content"></div></dialog>
-    <dialog id="vehicle-modal" class="vehicle-modal"><button class="close vehicle-close" aria-label="Close vehicle details">×</button><div id="vehicle-content"></div></dialog>
-    <template id="appointment-template"><p class="eyebrow">BOOK A CONSULTATION</p><h2>Let's talk about it.</h2><p class="modal-intro">Choose your preferred way to meet. We'll confirm your requested time after checking availability.</p><form id="appointment-form"><label>Full name<input required placeholder="Your full name" /></label><label>Email address<input type="email" required placeholder="you@example.com" /></label><div class="option-row"><button type="button" class="option active">Video call</button><button type="button" class="option">Phone call</button><button type="button" class="option">In person</button></div><label>Preferred date<input type="date" required /></label><button class="primary submit" type="submit">Request appointment <span>→</span></button></form></template>
-    <template id="track-template"><p class="eyebrow">TRACK YOUR ORDER</p><h2>Find your order.</h2><p class="modal-intro">For privacy, we require your order reference and the email used for your purchase.</p><form id="track-form"><label>Order reference<input required placeholder="e.g. DB-2026-0042" /></label><label>Email address<input type="email" required placeholder="you@example.com" /></label><button class="primary submit" type="submit">Check status <span>→</span></button></form></template>
-    <script src="app.js?v=7"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
