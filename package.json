@@ -1,0 +1,9 @@
+{
+  "name": "directbelgium-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DirectBelgium static vehicle catalog website.",
+  "scripts": {
+    "check": "node --check app.js"
+  }
+}
