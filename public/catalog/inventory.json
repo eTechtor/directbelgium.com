@@ -18,7 +18,7 @@
       "14": 6
     },
     "reported_card_count": 149,
-    "available_count": 134,
+    "available_count": 176,
     "excluded_sold_count": 29,
     "error_count": 0,
     "language": "English",
@@ -27,9 +27,9 @@
     "missing_source_photo_paths_removed": 7,
     "sold_list_checked_at_utc": "2026-10-10T07:52:03Z",
     "sold_count": 26,
-    "inventory_count_including_sold": 160,
-    "newly_imported_count": 26,
-    "last_import_checked_at_utc": "2026-10-10T08:00:03Z"
+    "inventory_count_including_sold": 202,
+    "newly_imported_count": 70,
+    "last_import_checked_at_utc": "2026-10-11T16:58:00Z"
   },
   "cars": [
     {
@@ -5585,54 +5585,6 @@
       "disclaimer_en": "AS-IS — This vehicle is sold as-is and is not represented as roadworthy, mechanically sound, or maintained to any guaranteed quality standard. The vehicle may not be suitable for transportation and may require significant repairs at the buyer’s expense. It may not be possible to register the vehicle for driving in its current condition. Prices are plus applicable sales tax. This is a used vehicle. The equipment listed reflects the vehicle’s original configuration; satellite radio, OnStar and other subscriptions, original tires, and removable accessories may or may not be included. Mileage is read from the vehicle odometer at listing time and is considered accurate, but errors may occur. DirectBelgium will confirm vehicle details before purchase."
     },
     {
-      "id": "402559",
-      "title": "2023 RAM 1500 Crew Cab",
-      "year": "2023",
-      "make": "RAM",
-      "model": "1500 Crew Cab",
-      "configuration": null,
-      "body_type": "Pickup",
-      "price_cad": "45000",
-      "price_currency": "CAD",
-      "availability": "available",
-      "mileage_km": "125801",
-      "colour": "Choisir la couleur ext....",
-      "interior_colour": "Black",
-      "interior_type": "Choisir l'intérieur...",
-      "transmission": "8-Speed Automatic Overdrive",
-      "drivetrain": "FourWheelDriveConfiguration",
-      "fuel_type": "Diesel",
-      "doors": "4",
-      "seats": "5",
-      "vin": "1C6SRFPM4PN261209",
-      "stock_number": "61144",
-      "source_card_image_url": "https://wheelsonline.ca/_accounts/10181/21392/402559_6column.jpg?phV=2026-07-20104705",
-      "listed_title": "2023 RAM 1500 CREW CAB",
-      "slug": "402559-2023-ram-1500-crew-cab",
-      "local_images": [
-        "assets/402559-2023-ram-1500-crew-cab/01.jpg",
-        "assets/402559-2023-ram-1500-crew-cab/02.jpg",
-        "assets/402559-2023-ram-1500-crew-cab/03.jpg",
-        "assets/402559-2023-ram-1500-crew-cab/04.jpg",
-        "assets/402559-2023-ram-1500-crew-cab/05.jpg",
-        "assets/402559-2023-ram-1500-crew-cab/06.jpg",
-        "assets/402559-2023-ram-1500-crew-cab/07.jpg",
-        "assets/402559-2023-ram-1500-crew-cab/08.jpg"
-      ],
-      "description_en": "",
-      "image_urls_original": [
-        "https://wheelsonline.ca/_accounts/10181/21392/402559_10column.jpg",
-        "https://wheelsonline.ca/_accounts/10181/21392/402559_aux001_10column.jpg",
-        "https://wheelsonline.ca/_accounts/10181/21392/402559_aux002_10column.jpg",
-        "https://wheelsonline.ca/_accounts/10181/21392/402559_aux003_10column.jpg",
-        "https://wheelsonline.ca/_accounts/10181/21392/402559_aux004_10column.jpg",
-        "https://wheelsonline.ca/_accounts/10181/21392/402559_aux005_10column.jpg",
-        "https://wheelsonline.ca/_accounts/10181/21392/402559_aux006_10column.jpg",
-        "https://wheelsonline.ca/_accounts/10181/21392/402559_aux007_10column.jpg"
-      ],
-      "disclaimer_en": "AS-IS — This vehicle is sold as-is and is not represented as roadworthy, mechanically sound, or maintained to any guaranteed quality standard. The vehicle may not be suitable for transportation and may require significant repairs at the buyer’s expense. It may not be possible to register the vehicle for driving in its current condition. Prices are plus applicable sales tax. This is a used vehicle. The equipment listed reflects the vehicle’s original configuration; satellite radio, OnStar and other subscriptions, original tires, and removable accessories may or may not be included. Mileage is read from the vehicle odometer at listing time and is considered accurate, but errors may occur. DirectBelgium will confirm vehicle details before purchase."
-    },
-    {
       "id": "402525",
       "title": "2015 Ford Focus SE",
       "year": "2015",
@@ -7249,38 +7201,6 @@
       "inventory_checked_at": "October 10, 2026"
     },
     {
-      "id": "408232",
-      "title": "2019 Ford F-150 XL",
-      "year": "2019",
-      "make": "Ford",
-      "model": "F-150",
-      "configuration": "XL 8-ft. Bed",
-      "price_cad": "7500",
-      "price_currency": "CAD",
-      "availability": "available",
-      "mileage_km": null,
-      "stock_number": "26-020221-19",
-      "slug": "408232-2019-ford-f-150-xl",
-      "local_images": [
-        "new_assets/408232-2019-ford-f-150-xl/01.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/02.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/03.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/04.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/05.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/06.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/07.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/08.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/09.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/10.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/11.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/12.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/13.jpg",
-        "new_assets/408232-2019-ford-f-150-xl/14.jpg"
-      ],
-      "description_en": "Runs, drives. No accidents on Carfax. Engine light is on for U0199 and U0200. Has a few dents and scratches on box. Has a cracked windshield.",
-      "inventory_checked_at": "October 10, 2026"
-    },
-    {
       "id": "408218",
       "title": "2010 Audi S5 4.2",
       "year": "2010",
@@ -7366,6 +7286,138 @@
       ],
       "description_en": "Needs repair: hole in the floor in front on the driver's side....see photo for hole in floor.",
       "inventory_checked_at": "October 10, 2026"
+    },
+    {
+      "id": "1866530227850108", "title": "2010 Toyota Venza Base", "year": "2010", "make": "Toyota", "model": "Venza", "configuration": "Base", "price_cad": "4000", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": null, "transmission": "Not specified", "condition": "Used — fair condition", "location": "Montréal, Quebec", "stock_number": "VZ-1866530227850108", "slug": "1866530227850108-2010-toyota-venza-base", "local_images": ["new_assets/venza-quebec/01_1866530227850108.jpg"], "description_en": "2010 Toyota Venza Base with fabric seats, air conditioning and heating. The engine and transmission are reported to be in excellent condition. V6. Export only.", "source_url": "https://www.facebook.com/marketplace/item/1866530227850108", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1082417141306390", "title": "2010 Toyota Venza Base", "year": "2010", "make": "Toyota", "model": "Venza", "configuration": "Base", "price_cad": "4200", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": null, "transmission": "Not specified", "condition": "Used — like new condition", "location": "Montréal, Quebec", "stock_number": "VZ-1082417141306390", "slug": "1082417141306390-2010-toyota-venza-base", "local_images": ["new_assets/venza-quebec/02_1082417141306390.jpg"], "description_en": "2010 Toyota Venza Base with a V6. Runs and drives; engine and transmission are reported to be in excellent condition. The fuse box needs replacement. Export only.", "source_url": "https://www.facebook.com/marketplace/item/1082417141306390", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1408921644136639", "title": "2011 Toyota Venza", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "", "price_cad": "4900", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "270000", "transmission": "Automatic", "condition": "Used", "location": "Longueuil, Quebec", "stock_number": "VZ-1408921644136639", "slug": "1408921644136639-2011-toyota-venza", "local_images": ["new_assets/venza-quebec/03_1408921644136639.jpg"], "description_en": "Air conditioning, power windows and automatic transmission. Runs well. V6. Some rust is visible in the photos.", "source_url": "https://www.facebook.com/marketplace/item/1408921644136639", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "4171620799635950", "title": "2011 Toyota Venza", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "", "price_cad": "4999", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "250000", "transmission": "Automatic", "condition": "Used", "location": "Longueuil, Quebec", "stock_number": "VZ-4171620799635950", "slug": "4171620799635950-2011-toyota-venza", "local_images": ["new_assets/venza-quebec/04_4171620799635950.jpg"], "description_en": "Good vehicle with automatic transmission, power windows, and working air conditioning and heating. Reported to run perfectly.", "source_url": "https://www.facebook.com/marketplace/item/4171620799635950", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1639482270852651", "title": "2009 Toyota Venza Luxury", "year": "2009", "make": "Toyota", "model": "Venza", "configuration": "Luxury", "price_cad": "5500", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "215000", "transmission": "Automatic", "condition": "Used — repairs required", "location": "Saint-Augustin-de-Desmaures, Quebec", "stock_number": "VZ-1639482270852651", "slug": "1639482270852651-2009-toyota-venza-luxury", "local_images": ["new_assets/venza-quebec/05_1639482270852651.jpg"], "description_en": "V6 3.5L all-wheel-drive Luxury edition with panoramic sunroof, leather seats, power features, rear camera, GPS and push-button start. The engine and transmission are reported to work very well. Repairs required: the rusted and perforated front crossmember must be replaced, and the brakes need replacement. Rust is present underneath and at the lower inside edges of the doors. Towing is recommended for a long distance.", "source_url": "https://www.facebook.com/marketplace/item/1639482270852651", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1070526485814054", "title": "2012 Toyota Venza AWD", "year": "2012", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "6200", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "280000", "transmission": "Automatic", "condition": "Used", "location": "Quebec City, Quebec", "stock_number": "VZ-1070526485814054", "slug": "1070526485814054-2012-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/06_1070526485814054.jpg"], "description_en": "2012 Venza 3.5L V6 AWD with mostly highway mileage. Reported to be mechanically excellent, very well maintained and ready to drive. Includes remote starter and cruise control.", "source_url": "https://www.facebook.com/marketplace/item/1070526485814054", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1844578736722945", "title": "2009 Toyota Venza", "year": "2009", "make": "Toyota", "model": "Venza", "configuration": "", "price_cad": "6250", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "117000", "transmission": "Automatic", "condition": "Used", "location": "Montréal, Quebec", "stock_number": "VZ-1844578736722945", "slug": "1844578736722945-2009-toyota-venza", "local_images": ["new_assets/venza-quebec/07_1844578736722945.jpg"], "description_en": "A very clean Toyota Venza with very low mileage.", "source_url": "https://www.facebook.com/marketplace/item/1844578736722945", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "28306612629033792", "title": "2012 Toyota Venza AWD", "year": "2012", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "6399", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "221000", "transmission": "Automatic", "condition": "Used", "location": "Montréal, Quebec", "stock_number": "VZ-28306612629033792", "slug": "28306612629033792-2012-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/08_28306612629033792.jpg"], "description_en": "Four-cylinder AWD model. The engine and transmission are reported to have no issues. Rust is present. Includes air conditioning and power features.", "source_url": "https://www.facebook.com/marketplace/item/28306612629033792", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1986141982063307", "title": "2011 Toyota Venza 4x4", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "4x4", "price_cad": "6499", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "257000", "transmission": "Automatic", "condition": "Used", "location": "Laval, Quebec", "stock_number": "VZ-1986141982063307", "slug": "1986141982063307-2011-toyota-venza-4x4", "local_images": ["new_assets/venza-quebec/09_1986141982063307.jpg"], "description_en": "2011 Toyota Venza 4x4 with alloy wheels, power features, cruise control, air conditioning and automatic transmission. Reported to run very well.", "source_url": "https://www.facebook.com/marketplace/item/1986141982063307", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1462842425716233", "title": "2009 Toyota Venza AWD", "year": "2009", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "6500", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "171000", "transmission": "Automatic", "condition": "Used", "location": "Laval, Quebec", "stock_number": "VZ-1462842425716233", "slug": "1462842425716233-2009-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/10_1462842425716233.jpg"], "description_en": "Very clean 2009 Toyota Venza, four-cylinder AWD. Automatic transmission, power windows and air conditioning. The seller states that no repairs are needed.", "source_url": "https://www.facebook.com/marketplace/item/1462842425716233", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1651209519670332", "title": "2010 Toyota Venza 4x4", "year": "2010", "make": "Toyota", "model": "Venza", "configuration": "4x4", "price_cad": "6500", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "200600", "transmission": "Automatic", "condition": "Used", "location": "Sainte-Angèle-de-Prémont, Quebec", "stock_number": "VZ-1651209519670332", "slug": "1651209519670332-2010-toyota-venza-4x4", "local_images": ["new_assets/venza-quebec/11_1651209519670332.jpg"], "description_en": "Toyota Venza 4x4 with a rear-view camera. Reported to run very well. Includes two new fenders for replacement.", "source_url": "https://www.facebook.com/marketplace/item/1651209519670332", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "2176562246612692", "title": "2011 Toyota Venza AWD", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "7000", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "169000", "transmission": "Automatic", "condition": "Used", "location": "Terrebonne, Quebec", "stock_number": "VZ-2176562246612692", "slug": "2176562246612692-2011-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/12_2176562246612692.jpg"], "description_en": "Firm price. Four-cylinder AWD with working air conditioning. Mechanical condition is reported to be excellent. Rust is present inside three doors.", "source_url": "https://www.facebook.com/marketplace/item/2176562246612692", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1611003243809729", "title": "2010 Toyota Venza", "year": "2010", "make": "Toyota", "model": "Venza", "configuration": "", "price_cad": "7000", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "192000", "transmission": "Automatic", "condition": "Used", "location": "Drummondville, Quebec", "stock_number": "VZ-1611003243809729", "slug": "1611003243809729-2010-toyota-venza", "local_images": ["new_assets/venza-quebec/13_1611003243809729.jpg"], "description_en": "Very clean, well-maintained vehicle with no reported issues. Features a sunroof, leather interior and no rust.", "source_url": "https://www.facebook.com/marketplace/item/1611003243809729", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "2631033940658965", "title": "2010 Toyota Venza", "year": "2010", "make": "Toyota", "model": "Venza", "configuration": "", "price_cad": "7000", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "258000", "transmission": "Not specified", "condition": "Used — good condition", "location": "Terrebonne, Quebec", "stock_number": "VZ-2631033940658965", "slug": "2631033940658965-2010-toyota-venza", "local_images": ["new_assets/venza-quebec/14_2631033940658965.jpg"], "description_en": "Well-maintained 2010 Toyota Venza in very good condition. Features an upgraded touchscreen stereo and subwoofer, panoramic sunroof, remote starter, push-button start, rear camera and parking sensors, bike-rack mount, winter tires, and a recent oil change. Reported to run smoothly and need nothing.", "source_url": "https://www.facebook.com/marketplace/item/2631033940658965", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1988719615136011", "title": "2011 Toyota Venza Limited", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "Limited", "price_cad": "7300", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "200000", "transmission": "Automatic", "condition": "Used", "location": "Longueuil, Quebec", "stock_number": "VZ-1988719615136011", "slug": "1988719615136011-2011-toyota-venza-limited", "local_images": ["new_assets/venza-quebec/15_1988719615136011.jpg"], "description_en": "Fully equipped Limited model with camera, navigation and two keys. Firm price.", "source_url": "https://www.facebook.com/marketplace/item/1988719615136011", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "2173777513351170", "title": "2013 Toyota Venza", "year": "2013", "make": "Toyota", "model": "Venza", "configuration": "", "price_cad": "7995", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "238000", "transmission": "Automatic", "condition": "Used", "location": "Montréal, Quebec", "stock_number": "VZ-2173777513351170", "slug": "2173777513351170-2013-toyota-venza", "local_images": ["new_assets/venza-quebec/16_2173777513351170.jpg"], "description_en": "Very clean 2013 Toyota Venza with a four-cylinder engine and automatic transmission. Reported to be mechanically sound with new brakes and winter tires. Includes remote starter, air conditioning, Bluetooth, cruise control, sunroof, heated seats, rear camera, heated mirrors, power windows and seats, and navigation.", "source_url": "https://www.facebook.com/marketplace/item/2173777513351170", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1105222569106066", "title": "2013 Toyota Venza AWD", "year": "2013", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "7999", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "214000", "transmission": "Automatic", "condition": "Used", "location": "Montréal, Quebec", "stock_number": "VZ-1105222569106066", "slug": "1105222569106066-2013-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/17_1105222569106066.jpg"], "description_en": "2013 Venza AWD with a four-cylinder engine, automatic transmission, certified mileage, working air conditioning, power windows, locks and mirrors. Reported never to have been in an accident. Available by appointment.", "source_url": "https://www.facebook.com/marketplace/item/1105222569106066", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1842023200504477", "title": "2011 Toyota Venza AWD", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "8250", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "163000", "transmission": "Automatic", "condition": "Used", "location": "Mont-Tremblant, Quebec", "stock_number": "VZ-1842023200504477", "slug": "1842023200504477-2011-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/18_1842023200504477.jpg"], "description_en": "Fully equipped six-cylinder AWD Venza. Reported to run very well and be in good general mechanical condition.", "source_url": "https://www.facebook.com/marketplace/item/1842023200504477", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1815645559866422", "title": "2013 Toyota Venza LE", "year": "2013", "make": "Toyota", "model": "Venza", "configuration": "LE", "price_cad": "8495", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "220450", "transmission": "Automatic", "condition": "Used", "location": "Montréal, Quebec", "stock_number": "VZ-1815645559866422", "slug": "1815645559866422-2013-toyota-venza-le", "local_images": ["new_assets/venza-quebec/19_1815645559866422.jpg"], "description_en": "Clean, well-maintained 2013 Toyota Venza LE, four-cylinder 2.7L, reported never to have been in an accident. Automatic transmission, air conditioning, rear camera, Bluetooth, alloy wheels, power windows and mirrors, steering-wheel audio controls, cruise control and fog lights.", "source_url": "https://www.facebook.com/marketplace/item/1815645559866422", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "2599447057175026", "title": "2013 Toyota Venza LE", "year": "2013", "make": "Toyota", "model": "Venza", "configuration": "LE", "price_cad": "8495", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "220450", "transmission": "Automatic", "condition": "Used", "location": "Laval, Quebec", "stock_number": "VZ-2599447057175026", "slug": "2599447057175026-2013-toyota-venza-le", "local_images": ["new_assets/venza-quebec/20_2599447057175026.jpg"], "description_en": "Clean, well-maintained 2013 Toyota Venza LE with a four-cylinder 2.7L engine. Includes automatic transmission, air conditioning, rear camera, Bluetooth, alloy wheels, power windows and mirrors, steering-wheel audio controls, cruise control and fog lights.", "source_url": "https://www.facebook.com/marketplace/item/2599447057175026", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "972935222542647", "title": "2011 Toyota Venza Limited AWD", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD", "price_cad": "8900", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "226000", "transmission": "Automatic", "condition": "Used", "location": "Laval, Quebec", "stock_number": "VZ-972935222542647", "slug": "972935222542647-2011-toyota-venza-limited-awd", "local_images": ["new_assets/venza-quebec/21_972935222542647.jpg"], "description_en": "2011 Toyota Venza Limited 3.5L V6 AWD, reported never to have been in an accident. Leather seats, panoramic roof, JBL sound system, power seat, push-button start, power liftgate, heated seats, navigation, automatic climate control, touchscreen, rear camera and Bluetooth. Recent work includes four Monroe struts, a new battery, synthetic-oil service and Nokian tires on alloy wheels.", "source_url": "https://www.facebook.com/marketplace/item/972935222542647", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1966428448065869", "title": "2011 Toyota Venza AWD", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "8900", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "196910", "transmission": "Automatic", "condition": "Used", "location": "Saint-Félix-de-Kingsey, Quebec", "stock_number": "VZ-1966428448065869", "slug": "1966428448065869-2011-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/22_1966428448065869.jpg"], "description_en": "Four-cylinder 2.7L AWD Venza with automatic transmission, air conditioning and power features. Reported to function perfectly. Includes a 2-inch hitch, winter mats, four new summer tires and four winter tires on alloy wheels. Annual rustproofing has been maintained; clean Carfax and no reported accidents. Recent service includes front and rear brake discs and pads, front shocks and links, and synthetic engine oil with filter.", "source_url": "https://www.facebook.com/marketplace/item/1966428448065869", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1102219399033994", "title": "2012 Toyota Venza AWD", "year": "2012", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "9000", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "159000", "transmission": "Automatic", "condition": "Used", "location": "Quebec City, Quebec", "stock_number": "VZ-1102219399033994", "slug": "1102219399033994-2012-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/23_1102219399033994.jpg"], "description_en": "2012 Toyota Venza AWD, 3.5L six-cylinder, already inspected. Recently repaired: brakes on all four wheels, rear shock bearing and rear parking brake. No rust reported; very clean and pleasant to drive.", "source_url": "https://www.facebook.com/marketplace/item/1102219399033994", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1370185474891211", "title": "2009 Toyota Venza", "year": "2009", "make": "Toyota", "model": "Venza", "configuration": "", "price_cad": "10000", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "90400", "transmission": "Automatic", "condition": "Used", "location": "Alma, Quebec", "stock_number": "VZ-1370185474891211", "slug": "1370185474891211-2009-toyota-venza", "local_images": ["new_assets/venza-quebec/24_1370185474891211.jpg"], "description_en": "Vehicle purchased new in 2010. Reported never to have been in an accident and to be very clean.", "source_url": "https://www.facebook.com/marketplace/item/1370185474891211", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "2977879935884640", "title": "2015 Toyota Venza AWD", "year": "2015", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "10495", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "179877", "transmission": "Automatic", "condition": "Used", "location": "Granby, Quebec", "stock_number": "VZ-2977879935884640", "slug": "2977879935884640-2015-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/25_2977879935884640.jpg"], "description_en": "2015 Toyota Venza with automatic transmission, AWD and V6 engine. Includes power features, cruise control, heated seat, rear camera and Bluetooth. No incident is reported on the Carfax report.", "source_url": "https://www.facebook.com/marketplace/item/2977879935884640", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1859177975254057", "title": "2013 Toyota Venza 4x4", "year": "2013", "make": "Toyota", "model": "Venza", "configuration": "4x4", "price_cad": "10999", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "115000", "transmission": "Automatic", "condition": "Used", "location": "Montréal, Quebec", "stock_number": "VZ-1859177975254057", "slug": "1859177975254057-2013-toyota-venza-4x4", "local_images": ["new_assets/venza-quebec/26_1859177975254057.jpg"], "description_en": "2013 Toyota Venza 4x4 with 115,000 km. Well equipped and in good condition.", "source_url": "https://www.facebook.com/marketplace/item/1859177975254057", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1410455061159503", "title": "2011 Toyota Venza AWD", "year": "2011", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "11300", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "154000", "transmission": "Not specified", "condition": "Used — good condition", "location": "Sainte-Marthe-sur-le-Lac, Quebec", "stock_number": "VZ-1410455061159503", "slug": "1410455061159503-2011-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/27_1410455061159503.jpg"], "description_en": "2011 Toyota Venza, four-cylinder 2.7L AWD, with 154,000 km. Reported to be very well maintained.", "source_url": "https://www.facebook.com/marketplace/item/1410455061159503", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1592632212315023", "title": "2015 Toyota Venza Limited AWD", "year": "2015", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD", "price_cad": "11688", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "222230", "transmission": "Automatic", "condition": "Used", "location": "Saint-Hyacinthe, Quebec", "stock_number": "U6314", "slug": "1592632212315023-2015-toyota-venza-limited-awd", "local_images": ["new_assets/venza-quebec/28_1592632212315023.jpg"], "description_en": "2015 Toyota Venza Limited V6 AWD with a 3.5L engine, black exterior and interior, and 222,230 km. The dealer reports that the vehicle has been inspected and includes a Carfax claims-history report. Manufacturer warranty is reported valid until August 7, 2030 or 100,000 km. Legal good-working-order warranty: 6 months or 10,000 km, whichever occurs first.", "source_url": "https://www.facebook.com/marketplace/item/1592632212315023", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "2105493200176716", "title": "2012 Toyota Venza XLE FWD", "year": "2012", "make": "Toyota", "model": "Venza", "configuration": "XLE FWD", "price_cad": "12000", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "150000", "transmission": "Automatic", "condition": "Used", "location": "Montréal, Quebec", "stock_number": "VZ-2105493200176716", "slug": "2105493200176716-2012-toyota-venza-xle-fwd", "local_images": ["new_assets/venza-quebec/29_2105493200176716.jpg"], "description_en": "Well-maintained 2012 Toyota Venza XLE front-wheel drive with 150,000 km and a four-cylinder engine. Includes remote starter, two keys, sunroof and panoramic roof, power liftgate, heated power seats, steering-wheel controls and Bluetooth. The parking brake requires repair.", "source_url": "https://www.facebook.com/marketplace/item/2105493200176716", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "989537087504863", "title": "2013 Toyota Venza Limited AWD", "year": "2013", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD", "price_cad": "12993", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "135761", "transmission": "Automatic", "condition": "Used", "location": "Lévis, Quebec", "stock_number": "VZ-989537087504863", "slug": "989537087504863-2013-toyota-venza-limited-awd", "local_images": ["new_assets/venza-quebec/30_989537087504863.jpg"], "description_en": "One-owner 2013 Toyota Venza Limited V6 AWD, reported never to have been in an accident. Features leather, power memory seats, dual sunroofs, JBL sound system, navigation, rear camera and air conditioning. Certified 135,761 km.", "source_url": "https://www.facebook.com/marketplace/item/989537087504863", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1969985050332901", "title": "2013 Toyota Venza AWD", "year": "2013", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "13215", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "162000", "transmission": "Automatic", "condition": "Used", "location": "Brossard, Quebec", "stock_number": "VZ-1969985050332901", "slug": "1969985050332901-2013-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/31_1969985050332901.jpg"], "description_en": "Very nice vehicle. The seller states that no repairs are needed and it is ready for winter.", "source_url": "https://www.facebook.com/marketplace/item/1969985050332901", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1524417759710063", "title": "2014 Toyota Venza Limited AWD", "year": "2014", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD", "price_cad": "18000", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "150000", "transmission": "Automatic", "condition": "Used — like new condition", "location": "Laval, Quebec", "stock_number": "VZ-1524417759710063", "slug": "1524417759710063-2014-toyota-venza-limited-awd", "local_images": ["new_assets/venza-quebec/32_1524417759710063.jpg"], "description_en": "2014 Venza Limited V6 3.5L AWD with 150,000 km. Very clean, very well maintained, rustproofed, non-smoker and no pets. Front and rear brakes were replaced in 2025; Michelin summer tires were purchased in April 2025. Includes all-weather mats and four winter tires without rims.", "source_url": "https://www.facebook.com/marketplace/item/1524417759710063", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1447164677322977", "title": "2022 Toyota Venza Hybrid", "year": "2022", "make": "Toyota", "model": "Venza", "configuration": "Hybrid", "price_cad": "7500", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "60000", "transmission": "Automatic", "condition": "Used — accident damaged", "location": "Laval, Quebec", "stock_number": "VZ-1447164677322977", "slug": "1447164677322977-2022-toyota-venza-hybrid", "local_images": ["new_assets/venza-quebec/33_1447164677322977.jpg"], "description_en": "2022 Toyota Venza Hybrid with 60,000 km. Accident damaged; offered for parts only.", "source_url": "https://www.facebook.com/marketplace/item/1447164677322977", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1855109512501146", "title": "2021 Toyota Venza Limited AWD Hybrid", "year": "2021", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD Hybrid", "price_cad": "26995", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "174694", "transmission": "CVT Automatic", "condition": "Used", "location": "Saint-Eustache, Quebec", "stock_number": "269771", "slug": "1855109512501146-2021-toyota-venza-limited-awd-hybrid", "local_images": ["new_assets/venza-quebec/34_1855109512501146.jpg"], "description_en": "2021 Toyota Venza Limited hybrid AWD with a 2.5L hybrid engine, white exterior, four doors and 174,694 km. Features panoramic sunroof, head-up display, power front seats with driver memory, lane-departure warning, blind-spot monitoring, rear camera, stability control, heated front seats, dual-zone automatic climate control, navigation, satellite and HD radio, power liftgate and 60/40 folding rear seats.", "source_url": "https://www.facebook.com/marketplace/item/1855109512501146", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1761141035142867", "title": "2021 Toyota Venza Limited AWD Hybrid", "year": "2021", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD Hybrid", "price_cad": "28500", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "108000", "transmission": "Automatic", "condition": "Used — accident repaired", "location": "Laval, Quebec", "stock_number": "VZ-1761141035142867", "slug": "1761141035142867-2021-toyota-venza-limited-awd-hybrid", "local_images": ["new_assets/venza-quebec/35_1761141035142867.jpg"], "description_en": "2021 Toyota Venza Limited, accident repaired, with 108,000 km, AWD and a 2.5L four-cylinder hybrid engine. Includes touchscreen with rear camera, Apple CarPlay, Bluetooth, USB, heated seat and steering wheel, leather interior, sunroof and alloy wheels.", "source_url": "https://www.facebook.com/marketplace/item/1761141035142867", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "2258128774982000", "title": "2023 Toyota Venza XLE AWD Hybrid", "year": "2023", "make": "Toyota", "model": "Venza", "configuration": "XLE AWD Hybrid", "price_cad": "28500", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "55500", "transmission": "Automatic", "condition": "Used — accident repaired", "location": "Laval, Quebec", "stock_number": "VZ-2258128774982000", "slug": "2258128774982000-2023-toyota-venza-xle-awd-hybrid", "local_images": ["new_assets/venza-quebec/36_2258128774982000.jpg"], "description_en": "2023 Toyota Venza XLE, accident repaired, with 55,500 km, AWD and a 2.5L four-cylinder hybrid engine. Includes touchscreen with rear camera, Apple CarPlay, Bluetooth, USB, heated seat and steering wheel, leather interior and alloy wheels.", "source_url": "https://www.facebook.com/marketplace/item/2258128774982000", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1569513881113806", "title": "2021 Toyota Venza AWD Hybrid", "year": "2021", "make": "Toyota", "model": "Venza", "configuration": "AWD Hybrid", "price_cad": "32495", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "73602", "transmission": "Automatic", "condition": "Used", "location": "Kirkland, Quebec", "stock_number": "P4688T", "slug": "1569513881113806-2021-toyota-venza-awd-hybrid", "local_images": ["new_assets/venza-quebec/37_1569513881113806.jpg"], "description_en": "2021 Toyota Venza AWD hybrid with a 2.5L four-cylinder engine, grey exterior, black interior, four doors and five seats. Features sunroof, Apple CarPlay, rear camera, heated seats and steering wheel, blind-spot monitoring, Bluetooth, lane-departure warning and adaptive cruise control. One previous owner is reported.", "source_url": "https://www.facebook.com/marketplace/item/1569513881113806", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1099052876321681", "title": "2021 Toyota Venza Limited AWD Hybrid", "year": "2021", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD Hybrid", "price_cad": "33289", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "67506", "transmission": "CVT Automatic", "condition": "Used", "location": "Victoriaville, Quebec", "stock_number": "E430", "slug": "1099052876321681-2021-toyota-venza-limited-awd-hybrid", "local_images": ["new_assets/venza-quebec/38_1099052876321681.jpg"], "description_en": "2021 Toyota Venza Limited hybrid AWD with a 2.5L hybrid engine and 67,506 km. Features a panoramic sunroof, head-up display, heated power front seats with driver memory, power liftgate, navigation, rear camera, blind-spot monitoring, dual-zone automatic climate control, remote start, Bluetooth, satellite and HD radio. Warranty: one month or 1,700 km.", "source_url": "https://www.facebook.com/marketplace/item/1099052876321681", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1653326482809075", "title": "2023 Toyota Venza XLE AWD", "year": "2023", "make": "Toyota", "model": "Venza", "configuration": "XLE AWD", "price_cad": "33988", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "100554", "transmission": "Automatic", "condition": "Used", "location": "Terrebonne, Quebec", "stock_number": "261174A", "slug": "1653326482809075-2023-toyota-venza-xle-awd", "local_images": ["new_assets/venza-quebec/39_1653326482809075.jpg"], "description_en": "2023 Toyota Venza XLE, reported with all-wheel drive for Quebec winters. Features heated exterior mirrors, leather seats, power driver and passenger seats, dual-zone climate control and a 2.5L four-cylinder engine.", "source_url": "https://www.facebook.com/marketplace/item/1653326482809075", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "1109195662065361", "title": "2021 Toyota Venza XLE AWD Hybrid", "year": "2021", "make": "Toyota", "model": "Venza", "configuration": "XLE AWD Hybrid", "price_cad": "34888", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "36834", "transmission": "Automatic", "condition": "Used", "location": "Mirabel, Quebec", "stock_number": "U26-447", "slug": "1109195662065361-2021-toyota-venza-xle-awd-hybrid", "local_images": ["new_assets/venza-quebec/40_1109195662065361.jpg"], "description_en": "2021 Toyota Venza Hybrid XLE with on-demand electronic AWD. Includes a 12.3-inch touchscreen and navigation, heated and ventilated SofTex front seats, heated steering wheel, 19-inch alloy wheels, Toyota Safety Sense 2.0, adaptive cruise control, blind-spot monitoring, hands-free power liftgate, wireless phone charging and LED headlights. One previous owner is reported.", "source_url": "https://www.facebook.com/marketplace/item/1109195662065361", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "2218482272100919", "title": "2023 Toyota Venza Limited AWD Hybrid", "year": "2023", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD Hybrid", "price_cad": "36495", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "120582", "transmission": "Automatic", "condition": "Used", "location": "Terrebonne, Quebec", "stock_number": "61094P", "slug": "2218482272100919-2023-toyota-venza-limited-awd-hybrid", "local_images": ["new_assets/venza-quebec/41_2218482272100919.jpg"], "description_en": "2023 Toyota Venza Limited hybrid AWD with blue exterior, black interior, four doors and five seats. Equipment includes rear camera, blind-spot monitoring, rear cross-traffic alert, adaptive cruise control, lane-departure warning with lane assist, pedestrian-detection pre-collision system, LED lighting, Apple CarPlay and Android Auto, navigation, heated and ventilated front seats, heated steering wheel, panoramic sunroof, power liftgate and leather seats.", "source_url": "https://www.facebook.com/marketplace/item/2218482272100919", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "852715044554532", "title": "2022 Toyota Venza Limited AWD Hybrid", "year": "2022", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD Hybrid", "price_cad": "38995", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "46121", "transmission": "Automatic", "condition": "Used", "location": "Laval, Quebec", "stock_number": "VZ-852715044554532", "slug": "852715044554532-2022-toyota-venza-limited-awd-hybrid", "local_images": ["new_assets/venza-quebec/42_852715044554532.jpg"], "description_en": "2022 Toyota Venza Limited AWD hybrid with Star Gaze roof and rear camera. The electronic on-demand AWD system can direct up to 80% of drive power to the rear wheels. This self-charging hybrid does not need to be plugged in; its battery recharges while driving and through regenerative braking. EV, Eco, Normal and Sport modes are included. Limited equipment includes SofTex upholstery, heated and ventilated front seats, driver memory seat, power passenger seat, heated steering wheel and dual-zone automatic climate control.", "source_url": "https://www.facebook.com/marketplace/item/852715044554532", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "3744972218976975", "title": "2023 Toyota Venza Limited Hybrid", "year": "2023", "make": "Toyota", "model": "Venza", "configuration": "Limited Hybrid", "price_cad": "42490", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "50588", "transmission": "Automatic", "condition": "Used", "location": "Drummondville, Quebec", "stock_number": "VZ-3744972218976975", "slug": "3744972218976975-2023-toyota-venza-limited-hybrid", "local_images": ["new_assets/venza-quebec/43_3744972218976975.jpg"], "description_en": "2023 Toyota Venza Limited hybrid with panoramic sunroof, heated and ventilated leather seats, heated steering wheel, 360-degree camera, cruise control, power features and air conditioning.", "source_url": "https://www.facebook.com/marketplace/item/3744972218976975", "inventory_checked_at": "October 11, 2026"
+    },
+    {
+      "id": "28489035820758242", "title": "2024 Toyota Venza AWD", "year": "2024", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "44495", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "7449", "transmission": "Automatic", "condition": "Used", "location": "Drummondville, Quebec", "stock_number": "VZ-28489035820758242", "slug": "28489035820758242-2024-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/44_28489035820758242.jpg"], "description_en": "Very well equipped 2024 Toyota Venza with fewer than 10,000 km. Includes all-wheel drive, heated and ventilated seats, dual-zone climate control and more.", "source_url": "https://www.facebook.com/marketplace/item/28489035820758242", "inventory_checked_at": "October 11, 2026"
     }
   ]
 }
