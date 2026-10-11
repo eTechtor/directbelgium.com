@@ -18,7 +18,7 @@
       "14": 6
     },
     "reported_card_count": 149,
-    "available_count": 175,
+    "available_count": 172,
     "excluded_sold_count": 29,
     "error_count": 0,
     "language": "English",
@@ -27,8 +27,8 @@
     "missing_source_photo_paths_removed": 7,
     "sold_list_checked_at_utc": "2026-10-10T07:52:03Z",
     "sold_count": 26,
-    "inventory_count_including_sold": 201,
-    "newly_imported_count": 69,
+    "inventory_count_including_sold": 198,
+    "newly_imported_count": 66,
     "last_import_checked_at_utc": "2026-10-11T16:58:00Z"
   },
   "cars": [
@@ -7406,15 +7406,6 @@
     },
     {
       "id": "2218482272100919", "title": "2023 Toyota Venza Limited AWD Hybrid", "year": "2023", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD Hybrid", "price_cad": "36495", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "120582", "transmission": "Automatic", "condition": "Used", "location": "Terrebonne, Quebec", "stock_number": "61094P", "slug": "2218482272100919-2023-toyota-venza-limited-awd-hybrid", "local_images": ["new_assets/venza-quebec/41_2218482272100919.jpg"], "description_en": "2023 Toyota Venza Limited hybrid AWD with blue exterior, black interior, four doors and five seats. Equipment includes rear camera, blind-spot monitoring, rear cross-traffic alert, adaptive cruise control, lane-departure warning with lane assist, pedestrian-detection pre-collision system, LED lighting, Apple CarPlay and Android Auto, navigation, heated and ventilated front seats, heated steering wheel, panoramic sunroof, power liftgate and leather seats.", "source_url": "https://www.facebook.com/marketplace/item/2218482272100919", "inventory_checked_at": "October 11, 2026"
-    },
-    {
-      "id": "852715044554532", "title": "2022 Toyota Venza Limited AWD Hybrid", "year": "2022", "make": "Toyota", "model": "Venza", "configuration": "Limited AWD Hybrid", "price_cad": "38995", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "46121", "transmission": "Automatic", "condition": "Used", "location": "Laval, Quebec", "stock_number": "VZ-852715044554532", "slug": "852715044554532-2022-toyota-venza-limited-awd-hybrid", "local_images": ["new_assets/venza-quebec/42_852715044554532.jpg"], "description_en": "2022 Toyota Venza Limited AWD hybrid with Star Gaze roof and rear camera. The electronic on-demand AWD system can direct up to 80% of drive power to the rear wheels. This self-charging hybrid does not need to be plugged in; its battery recharges while driving and through regenerative braking. EV, Eco, Normal and Sport modes are included. Limited equipment includes SofTex upholstery, heated and ventilated front seats, driver memory seat, power passenger seat, heated steering wheel and dual-zone automatic climate control.", "source_url": "https://www.facebook.com/marketplace/item/852715044554532", "inventory_checked_at": "October 11, 2026"
-    },
-    {
-      "id": "3744972218976975", "title": "2023 Toyota Venza Limited Hybrid", "year": "2023", "make": "Toyota", "model": "Venza", "configuration": "Limited Hybrid", "price_cad": "42490", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "50588", "transmission": "Automatic", "condition": "Used", "location": "Drummondville, Quebec", "stock_number": "VZ-3744972218976975", "slug": "3744972218976975-2023-toyota-venza-limited-hybrid", "local_images": ["new_assets/venza-quebec/43_3744972218976975.jpg"], "description_en": "2023 Toyota Venza Limited hybrid with panoramic sunroof, heated and ventilated leather seats, heated steering wheel, 360-degree camera, cruise control, power features and air conditioning.", "source_url": "https://www.facebook.com/marketplace/item/3744972218976975", "inventory_checked_at": "October 11, 2026"
-    },
-    {
-      "id": "28489035820758242", "title": "2024 Toyota Venza AWD", "year": "2024", "make": "Toyota", "model": "Venza", "configuration": "AWD", "price_cad": "44495", "price_currency": "CAD", "availability": "available", "body_type": "SUV", "mileage_km": "7449", "transmission": "Automatic", "condition": "Used", "location": "Drummondville, Quebec", "stock_number": "VZ-28489035820758242", "slug": "28489035820758242-2024-toyota-venza-awd", "local_images": ["new_assets/venza-quebec/44_28489035820758242.jpg"], "description_en": "Very well equipped 2024 Toyota Venza with fewer than 10,000 km. Includes all-wheel drive, heated and ventilated seats, dual-zone climate control and more.", "source_url": "https://www.facebook.com/marketplace/item/28489035820758242", "inventory_checked_at": "October 11, 2026"
     }
   ]
 }

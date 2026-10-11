@@ -3,6 +3,8 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 const PAGE_SIZE = 12;
 const CAD_ADDITION = 1600;
 const NGN_PER_CAD = 953.055;
+const PRIORITY_PRICE_MIN = 4_000_000;
+const PRIORITY_PRICE_MAX = 6_500_000;
 const FEATURED_TITLES = [
   '2015 Nissan Altima 2.5',
   '2015 Chevrolet Equinox 1LT',
@@ -132,7 +134,7 @@ export default function App() {
   const [query, setQuery] = useState('');
   const [make, setMake] = useState('');
   const [bodyStyle, setBodyStyle] = useState('');
-  const [sort, setSort] = useState('newest');
+  const [sort, setSort] = useState('recommended');
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [heroIndex, setHeroIndex] = useState(0);
   const [selectedCar, setSelectedCar] = useState(null);
@@ -157,12 +159,17 @@ export default function App() {
       return (!lowered || text.includes(lowered)) && (!make || car.make === make) && (!bodyStyle || car.body_type === bodyStyle);
     });
     const sorters = {
+      recommended: (a, b) => {
+        const aInPriorityRange = adjustedNaira(a) >= PRIORITY_PRICE_MIN && adjustedNaira(a) <= PRIORITY_PRICE_MAX;
+        const bInPriorityRange = adjustedNaira(b) >= PRIORITY_PRICE_MIN && adjustedNaira(b) <= PRIORITY_PRICE_MAX;
+        return Number(bInPriorityRange) - Number(aInPriorityRange) || adjustedNaira(a) - adjustedNaira(b);
+      },
       newest: (a, b) => cleanNumber(b.year) - cleanNumber(a.year) || cleanNumber(b.id) - cleanNumber(a.id),
       'price-low': (a, b) => adjustedNaira(a) - adjustedNaira(b),
       'price-high': (a, b) => adjustedNaira(b) - adjustedNaira(a),
       'mileage-low': (a, b) => cleanNumber(a.mileage_km) - cleanNumber(b.mileage_km),
     };
-    return results.sort(sorters[sort] || sorters.newest);
+    return results.sort(sorters[sort] || sorters.recommended);
   }, [cars, query, make, bodyStyle, sort]);
   const currentHero = featured.length ? featured[heroIndex % featured.length] : null;
   const openRequest = (type, product = '') => { setSelectedCar(null); setDialogProduct(product); setDialogType(type); };
@@ -175,7 +182,7 @@ export default function App() {
     return () => window.clearInterval(timer);
   }, [featured.length, rotationPaused]);
 
-  const resetFilters = () => { setQuery(''); setMake(''); setBodyStyle(''); setSort('newest'); setVisible(PAGE_SIZE); };
+  const resetFilters = () => { setQuery(''); setMake(''); setBodyStyle(''); setSort('recommended'); setVisible(PAGE_SIZE); };
   const navClick = () => setMenuOpen(false);
   const photosTotal = cars.reduce((total, car) => total + (car.local_images?.length || 0), 0);
 
@@ -215,7 +222,7 @@ export default function App() {
           <label className="search-field"><span>Search inventory</span><input type="search" placeholder="Search make, model, year or stock number" autoComplete="off" value={query} onChange={(event) => { setQuery(event.target.value); setVisible(PAGE_SIZE); }} /></label>
           <label><span>Make</span><select value={make} onChange={(event) => { setMake(event.target.value); setVisible(PAGE_SIZE); }}><option value="">All makes</option>{optionsFor(cars, 'make').map((item) => <option key={item} value={item}>{item}</option>)}</select></label>
           <label><span>Body style</span><select value={bodyStyle} onChange={(event) => { setBodyStyle(event.target.value); setVisible(PAGE_SIZE); }}><option value="">All body styles</option>{optionsFor(cars, 'body_type').map((item) => <option key={item} value={item}>{item}</option>)}</select></label>
-          <label><span>Sort</span><select value={sort} onChange={(event) => { setSort(event.target.value); setVisible(PAGE_SIZE); }}><option value="newest">Year: newest</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="mileage-low">Mileage: low to high</option></select></label>
+          <label><span>Sort</span><select value={sort} onChange={(event) => { setSort(event.target.value); setVisible(PAGE_SIZE); }}><option value="recommended">Recommended: ₦4M–₦6.5M first</option><option value="newest">Year: newest</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="mileage-low">Mileage: low to high</option></select></label>
         </div>
         <div className="inventory-meta"><p aria-live="polite">{inventoryError ? 'Inventory temporarily unavailable' : cars.length ? <><strong>{filtered.length}</strong> {filtered.length === 1 ? 'vehicle matches' : 'vehicles match'} your search · {photosTotal.toLocaleString()} photos</> : 'Loading Canadian inventory…'}</p><button type="button" onClick={resetFilters}>Reset filters</button></div>
         <p className="fx-note">Prices are estimates in naira. Final pricing is confirmed after supplier availability and vehicle condition are verified. Taxes, shipping, customs and clearing are quoted separately.</p>
