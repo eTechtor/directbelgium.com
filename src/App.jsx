@@ -3,8 +3,9 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 const PAGE_SIZE = 12;
 const CAD_ADDITION = 1600;
 const NGN_PER_CAD = 953.055;
-const PRIORITY_PRICE_MIN = 4_000_000;
-const PRIORITY_PRICE_MAX = 6_500_000;
+const PRIORITY_YEAR_MIN = 2011;
+const PRIORITY_PRICE_MIN = 3_000_000;
+const PRIORITY_PRICE_MAX = 7_000_000;
 const FEATURED_TITLES = [
   '2015 Nissan Altima 2.5',
   '2015 Chevrolet Equinox 1LT',
@@ -160,8 +161,8 @@ export default function App() {
     });
     const sorters = {
       recommended: (a, b) => {
-        const aInPriorityRange = adjustedNaira(a) >= PRIORITY_PRICE_MIN && adjustedNaira(a) <= PRIORITY_PRICE_MAX;
-        const bInPriorityRange = adjustedNaira(b) >= PRIORITY_PRICE_MIN && adjustedNaira(b) <= PRIORITY_PRICE_MAX;
+        const aInPriorityRange = cleanNumber(a.year) >= PRIORITY_YEAR_MIN && adjustedNaira(a) >= PRIORITY_PRICE_MIN && adjustedNaira(a) <= PRIORITY_PRICE_MAX;
+        const bInPriorityRange = cleanNumber(b.year) >= PRIORITY_YEAR_MIN && adjustedNaira(b) >= PRIORITY_PRICE_MIN && adjustedNaira(b) <= PRIORITY_PRICE_MAX;
         return Number(bInPriorityRange) - Number(aInPriorityRange) || adjustedNaira(a) - adjustedNaira(b);
       },
       newest: (a, b) => cleanNumber(b.year) - cleanNumber(a.year) || cleanNumber(b.id) - cleanNumber(a.id),
@@ -222,7 +223,7 @@ export default function App() {
           <label className="search-field"><span>Search inventory</span><input type="search" placeholder="Search make, model, year or stock number" autoComplete="off" value={query} onChange={(event) => { setQuery(event.target.value); setVisible(PAGE_SIZE); }} /></label>
           <label><span>Make</span><select value={make} onChange={(event) => { setMake(event.target.value); setVisible(PAGE_SIZE); }}><option value="">All makes</option>{optionsFor(cars, 'make').map((item) => <option key={item} value={item}>{item}</option>)}</select></label>
           <label><span>Body style</span><select value={bodyStyle} onChange={(event) => { setBodyStyle(event.target.value); setVisible(PAGE_SIZE); }}><option value="">All body styles</option>{optionsFor(cars, 'body_type').map((item) => <option key={item} value={item}>{item}</option>)}</select></label>
-          <label><span>Sort</span><select value={sort} onChange={(event) => { setSort(event.target.value); setVisible(PAGE_SIZE); }}><option value="recommended">Recommended: ₦4M–₦6.5M first</option><option value="newest">Year: newest</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="mileage-low">Mileage: low to high</option></select></label>
+          <label><span>Sort</span><select value={sort} onChange={(event) => { setSort(event.target.value); setVisible(PAGE_SIZE); }}><option value="recommended">Recommended: 2011+ · ₦3M–₦7M first</option><option value="newest">Year: newest</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="mileage-low">Mileage: low to high</option></select></label>
         </div>
         <div className="inventory-meta"><p aria-live="polite">{inventoryError ? 'Inventory temporarily unavailable' : cars.length ? <><strong>{filtered.length}</strong> {filtered.length === 1 ? 'vehicle matches' : 'vehicles match'} your search · {photosTotal.toLocaleString()} photos</> : 'Loading Canadian inventory…'}</p><button type="button" onClick={resetFilters}>Reset filters</button></div>
         <p className="fx-note">Prices are estimates in naira. Final pricing is confirmed after supplier availability and vehicle condition are verified. Taxes, shipping, customs and clearing are quoted separately.</p>
