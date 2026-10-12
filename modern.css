@@ -89,6 +89,9 @@ nav a:hover, footer a:hover { color: var(--blue); }
 }
 .primary.small { min-height: 46px; padding: 0 17px; font-size: 13px; }
 .label-short { display: none; }
+.wishlist-link { display:inline-flex; align-items:center; justify-content:center; gap:4px; min-width:42px; height:42px; padding:0 9px; border:1px solid var(--line); border-radius:11px; background:#fff; color:#c81e4a; text-decoration:none; font-size:17px; }
+.wishlist-link:hover { border-color:#fecdd3; background:#fff1f2; }
+.wishlist-link b { min-width:14px; color:#334155; font:800 11px Inter,Arial,sans-serif; }
 
 .hero {
   max-width: 1280px;
@@ -369,6 +372,7 @@ input { height: 48px; font-size: 14px; }
   .brand > .brand-mark { width: 64px; height: 44px; }
   .brand-name { font-size: 14px; }
   .header-actions { margin: 0 9px 0 auto; }
+  .wishlist-link { min-width:39px; height:40px; padding:0 8px; }
   .primary.small { min-height: 42px; padding: 0 12px; font-size: 12px; gap: 5px; white-space: nowrap; }
   .label-long { display: none; }
   .label-short { display: inline; }

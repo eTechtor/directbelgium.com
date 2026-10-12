@@ -40,7 +40,7 @@ function Brand() {
   </a>;
 }
 
-function VehicleCard({ car, onOpen }) {
+function VehicleCard({ car, onOpen, isWishlisted, onToggleWishlist }) {
   const photos = vehiclePhotos(car);
   const image = photos[0] ? imageUrl(photos[0]) : car.source_card_image_url;
   const specs = [car.transmission, cleanNumber(car.mileage_km) > 0 ? `${formatInteger(car.mileage_km)} km` : '', car.body_type || car.fuel_type].filter(Boolean);
@@ -49,6 +49,9 @@ function VehicleCard({ car, onOpen }) {
       {image ? <img src={image} alt={`${car.title} — supplier photo 1`} loading="lazy" /> : <div className="catalog-loading">Photo unavailable</div>}
       {car.availability === 'sold' ? <span className="sold-badge" aria-label="Sold">SOLD</span> : <span className="badge">VERIFY AVAILABILITY</span>}
       <span className="photo-count">▧ {photos.length} photos</span>
+    </button>
+    <button className={`wishlist-button ${isWishlisted ? 'saved' : ''}`} type="button" onClick={() => onToggleWishlist(car.id)} aria-pressed={isWishlisted} aria-label={isWishlisted ? `Remove ${car.title} from wishlist` : `Save ${car.title} to wishlist`}>
+      <span aria-hidden="true">♥</span>
     </button>
     <div className="product-info">
       <h3>{car.title}</h3>
@@ -60,7 +63,7 @@ function VehicleCard({ car, onOpen }) {
   </article>;
 }
 
-function VehicleDialog({ car, onClose, onAppointment }) {
+function VehicleDialog({ car, onClose, onAppointment, isWishlisted, onToggleWishlist }) {
   const dialogRef = useRef(null);
   const [photoIndex, setPhotoIndex] = useState(0);
   const photos = car ? vehiclePhotos(car) : [];
@@ -95,7 +98,7 @@ function VehicleDialog({ car, onClose, onAppointment }) {
         <div className="vehicle-spec-grid">{specRows.map(([label, value]) => <div className="vehicle-spec" key={label}><span>{label}</span><strong>{value}</strong></div>)}</div>
         <div className="condition-box"><h3>Vehicle condition description</h3><p>{description}</p></div>
         <p className="supplier-disclaimer"><strong>Important:</strong> {car.disclaimer_en || 'Used vehicle details must be independently verified before purchase.'}</p>
-        <div className="vehicle-actions"><button className="primary" type="button" onClick={() => onAppointment(car.title)}>Reserve inquiry &amp; consult <span>→</span></button><button className="secondary" type="button" onClick={(event) => { navigator.clipboard?.writeText(String(car.stock_number || car.id)); event.currentTarget.textContent = 'Reference copied'; }}>Copy stock reference</button></div>
+        <div className="vehicle-actions"><button className="primary" type="button" onClick={() => onAppointment(car.title)}>Reserve inquiry &amp; consult <span>→</span></button><button className={`secondary dialog-wishlist ${isWishlisted ? 'saved' : ''}`} type="button" onClick={() => onToggleWishlist(car.id)}>{isWishlisted ? '♥ Saved to wishlist' : '♡ Save to wishlist'}</button><button className="secondary" type="button" onClick={(event) => { navigator.clipboard?.writeText(String(car.stock_number || car.id)); event.currentTarget.textContent = 'Reference copied'; }}>Copy stock reference</button></div>
       </section>
     </div>
   </dialog>;
@@ -142,6 +145,9 @@ export default function App() {
   const [dialogType, setDialogType] = useState('');
   const [dialogProduct, setDialogProduct] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
+  const [wishlistIds, setWishlistIds] = useState(() => {
+    try { return JSON.parse(window.localStorage.getItem('directbelgium-wishlist') || '[]'); } catch { return []; }
+  });
   const heroVisualRef = useRef(null);
   const [rotationPaused, setRotationPaused] = useState(false);
 
@@ -152,7 +158,12 @@ export default function App() {
       .catch(() => setInventoryError(true));
   }, []);
 
+  useEffect(() => {
+    window.localStorage.setItem('directbelgium-wishlist', JSON.stringify(wishlistIds));
+  }, [wishlistIds]);
+
   const featured = useMemo(() => FEATURED_TITLES.map((title) => cars.find((car) => car.title === title && car.availability === 'available' && car.local_images?.[0])).filter(Boolean), [cars]);
+  const wishlist = useMemo(() => cars.filter((car) => wishlistIds.includes(car.id)), [cars, wishlistIds]);
   const filtered = useMemo(() => {
     const lowered = query.trim().toLowerCase();
     const results = cars.filter((car) => {
@@ -176,6 +187,7 @@ export default function App() {
   const openRequest = (type, product = '') => { setSelectedCar(null); setDialogProduct(product); setDialogType(type); };
   const openVehicle = (car) => { setDialogType(''); setSelectedCar(car); };
   const moveHero = (direction) => { if (featured.length) setHeroIndex((index) => (index + direction + featured.length) % featured.length); };
+  const toggleWishlist = (id) => setWishlistIds((ids) => ids.includes(id) ? ids.filter((savedId) => savedId !== id) : [...ids, id]);
 
   useEffect(() => {
     if (featured.length < 2 || rotationPaused || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
@@ -192,8 +204,8 @@ export default function App() {
     <header className="site-header">
       <Brand />
       <button className="menu-button" aria-label="Open menu" aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}><i></i><i></i></button>
-      <nav className={menuOpen ? 'is-open' : ''} aria-label="Primary navigation" onClick={navClick}><a href="#inventory">Inventory</a><a href="#process">How it works</a><a href="#shipping">Shipping</a><a href="#shipping" onClick={(event) => { event.preventDefault(); openRequest('track'); }}>Track order</a></nav>
-      <div className="header-actions"><button className="primary small" onClick={() => openRequest('appointment')}><span className="label-long">Book a consultation</span><span className="label-short">Book consult</span><span aria-hidden="true">→</span></button></div>
+      <nav className={menuOpen ? 'is-open' : ''} aria-label="Primary navigation" onClick={navClick}><a href="#inventory">Inventory</a><a href="#wishlist">Wishlist{wishlist.length ? ` (${wishlist.length})` : ''}</a><a href="#process">How it works</a><a href="#shipping">Shipping</a><a href="#shipping" onClick={(event) => { event.preventDefault(); openRequest('track'); }}>Track order</a></nav>
+      <div className="header-actions"><a className="wishlist-link" href="#wishlist" aria-label={`View wishlist, ${wishlist.length} saved vehicles`}><span aria-hidden="true">♥</span><b>{wishlist.length}</b></a><button className="primary small" onClick={() => openRequest('appointment')}><span className="label-long">Book a consultation</span><span className="label-short">Book consult</span><span aria-hidden="true">→</span></button></div>
     </header>
 
     <main id="top">
@@ -217,6 +229,11 @@ export default function App() {
 
       <section className="trust-strip"><div><span className="strip-icon">✓</span><b>Verified before payment</b><small>Every quote follows availability checks</small></div><div><span className="strip-icon">◎</span><b>One team, end to end</b><small>From sourcing through shipping</small></div><div><span className="strip-icon">⌁</span><b>Clear cost breakdowns</b><small>Shipping and exclusions explained</small></div></section>
 
+      <section className="section wishlist-section" id="wishlist">
+        <div className="section-heading"><div><p className="eyebrow">YOUR SAVED VEHICLES</p><h2>Your wishlist.</h2></div><p>{wishlist.length ? 'Keep the vehicles you like together, then open any one to review its details or make an inquiry.' : 'Tap the heart on any vehicle to save it here. Your wishlist stays on this device.'}</p></div>
+        {wishlist.length ? <div className="product-grid wishlist-grid">{wishlist.map((car) => <VehicleCard key={car.id} car={car} onOpen={openVehicle} isWishlisted onToggleWishlist={toggleWishlist} />)}</div> : <div className="empty-wishlist"><span aria-hidden="true">♡</span><h3>No saved vehicles yet</h3><p>Browse the inventory and tap the heart on a car you love.</p><a className="secondary" href="#inventory">Browse inventory <span>→</span></a></div>}
+      </section>
+
       <section className="section inventory-section" id="inventory">
         <div className="section-heading"><div><p className="eyebrow">CANADIAN VEHICLE INVENTORY</p><h2>Find your next<br />great purchase.</h2></div><p>Browse vehicle listings, photos and available condition notes. Listings are for reference; price, condition and availability must be confirmed before purchase.</p></div>
         <div className="inventory-toolbar">
@@ -227,7 +244,7 @@ export default function App() {
         </div>
         <div className="inventory-meta"><p aria-live="polite">{inventoryError ? 'Inventory temporarily unavailable' : cars.length ? <><strong>{filtered.length}</strong> {filtered.length === 1 ? 'vehicle matches' : 'vehicles match'} your search · {photosTotal.toLocaleString()} photos</> : 'Loading Canadian inventory…'}</p><button type="button" onClick={resetFilters}>Reset filters</button></div>
         <p className="fx-note">Prices are estimates in naira. Final pricing is confirmed after supplier availability and vehicle condition are verified. Taxes, shipping, customs and clearing are quoted separately.</p>
-        <div className="product-grid" id="products" aria-live="polite">{inventoryError ? <div className="error-state"><strong>Inventory could not be loaded.</strong><br />Please refresh the page and try again.</div> : !cars.length ? <div className="catalog-loading">Loading vehicles and photos…</div> : !filtered.length ? <div className="empty-catalog"><h3>No vehicles found</h3><p>Try another make, body style or search term.</p></div> : filtered.slice(0, visible).map((car) => <VehicleCard key={car.id} car={car} onOpen={openVehicle} />)}</div>
+        <div className="product-grid" id="products" aria-live="polite">{inventoryError ? <div className="error-state"><strong>Inventory could not be loaded.</strong><br />Please refresh the page and try again.</div> : !cars.length ? <div className="catalog-loading">Loading vehicles and photos…</div> : !filtered.length ? <div className="empty-catalog"><h3>No vehicles found</h3><p>Try another make, body style or search term.</p></div> : filtered.slice(0, visible).map((car) => <VehicleCard key={car.id} car={car} onOpen={openVehicle} isWishlisted={wishlistIds.includes(car.id)} onToggleWishlist={toggleWishlist} />)}</div>
         {visible < filtered.length && <button className="secondary wide" type="button" onClick={() => setVisible((count) => count + PAGE_SIZE)}>Show more vehicles <span>↓</span> <small>{Math.min(visible, filtered.length)} of {filtered.length}</small></button>}
       </section>
 
@@ -243,7 +260,7 @@ export default function App() {
     </main>
 
     <footer><div className="footer-brand"><Brand /><p>Canada Direct. Nigeria Ready.</p></div><div><b>Explore</b><a href="#inventory">Used cars</a><a href="#inventory">Browse all vehicles</a><a href="#process">How sourcing works</a></div><div><b>Company</b><a href="#process">How it works</a><a href="#shipping">Shipping &amp; delivery</a><a href="#faq">Frequently asked questions</a></div><div><b>Support</b><a href="#shipping" onClick={(event) => { event.preventDefault(); openRequest('track'); }}>Track an order</a><a href="#shipping">Customs &amp; clearing</a><a href="#faq">Pricing &amp; availability</a></div><small className="copyright">© {new Date().getFullYear()} DirectBelgium. Prices and availability must be confirmed before purchase.</small></footer>
-    <VehicleDialog car={selectedCar} onClose={() => setSelectedCar(null)} onAppointment={(product) => openRequest('appointment', product)} />
+    <VehicleDialog car={selectedCar} onClose={() => setSelectedCar(null)} onAppointment={(product) => openRequest('appointment', product)} isWishlisted={selectedCar ? wishlistIds.includes(selectedCar.id) : false} onToggleWishlist={toggleWishlist} />
     <RequestDialog type={dialogType} product={dialogProduct} onClose={() => setDialogType('')} />
   </>;
 }
